@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cabecalho{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    height: 4rem;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.title_header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.img_header{
+    max-width: 50px;
+    max-height: 50px; 
+}
+
+.menu_header{
+    display: flex;
+    list-style:none;
+    gap: 2em;    
+    margin-left: 100px;
+}
+
+.header_button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.Section1{
+    display: flex;
+    background-color: #BABA;
+}
+
+.Conteudo1_section1{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+   padding: 5rem 2rem 5rem 2rem;
+   justify-content: center;
+  
+}
+.section1_h1 {
+    font-size:3rem;
+  }
+
+.sec1{
+ display: flex;
+ gap: 10px;
+ 
+ align-items: center;
+}
+#sec4{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+#sec2{
+    color: orange;
+    
+}
+.conteudo2_section1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 2rem 5rem 2rem;
+        gap: 20px;
+    width: 50%;
+}
+.img_sec{
+    padding: 100px;
+    background-color: blueviolet;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.testediv{
+    margin-top: 50000px;
+}
+
+#teste{
+    scroll-behavior:smooth ;
+    overflow:scroll;
+}
