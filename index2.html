@@ -1,25 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizzaria La Toscana</title>
+    <link rel="stylesheet" href="./styles2.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/pizza.png" type="image/x-icon">
 </head>
 
 <body>
-    <header class="cabecalho">
-
-        <h1 class="title_header"><img src="./pizza.png" alt="" class="img_header">Pizzaria do Vitão</h1>
+    <!-- <header class="cabecalho"> -->
+    <div class="showmenu">
+        <h1 class="title_header"><img src="./images/logo.png" alt="" class="img_header">Pizzaria La Toscana</h1>
         <ul class="menu_header">
             <li><a href="#menu">Menu</a></li>
             <li><a href="#teste">About</a></li>
             <li><a href="#contato">Contact</a></li>
         </ul>
         <button class="header_button">Order Now</button>
+    </div>
+    <nav class="bg-white dark:bg-white dark:border-white" id="menu2">
+        <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4 bg-gray-50 relative">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./images/pizza.png" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Pizzaria La
+                    Toscana</span>
+            </a>
+            <!-- Botão do menu hamburguer -->
+            <button data-collapse-toggle="navbar-hamburger" type="button"
+                class="lg:hidden flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <!-- Menu principal -->
+            <div class="lg:flex lg:items-center lg:space-x-4 absolute top-16 right-4 left-4 bg-white dark:bg-white dark:border-white rounded-lg shadow-lg"
+                id="navbar-hamburger">
+                <ul class="flex flex-col lg:flex-row lg:space-x-4 lg:space-y-0">
+                    <li class="w-full">
+                        <a href="#menu"
+                            class="text-center block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Menu</a>
+                    </li>
+                    <li class="w-full">
+                        <a href="#teste"
+                            class="text-center block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">About</a>
+                    </li>
+                    <li class="w-full">
+                        <a href="#contato"
+                            class="text-center block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    </header>
+
+
+
+
+
+    <!-- </header> -->
 
     <section class="Section1">
         <div class="Conteudo1_section1">
@@ -34,10 +79,10 @@
         </div>
 
         <div class="conteudo2_section1">
-            <div class="img_sec">img1</div>
-            <div class="img_sec">img2</div>
-            <div class="img_sec">img3</div>
-            <div class="img_sec">img4</div>
+            <img src="./images/Default_A_still_life_of_a_mouthwatering_pizza_captured_in_oil_0.jpg" alt="">
+            <img src="./images/Default_A_still_life_of_a_mouthwatering_pizza_captured_in_oil_1.jpg" alt="">
+            <img src="./images/Default_A_still_life_of_a_mouthwatering_pizza_captured_in_oil_2.jpg" alt="">
+            <img src="./images/Default_A_still_life_of_a_mouthwatering_pizza_captured_in_oil_3.jpg" alt="">
         </div>
 
     </section>
@@ -51,7 +96,8 @@
         <div class="Menu_Section3">
 
             <div class="menu_op">
-                <img src="./pizza.png" alt="" class="img_section3">
+                <img src="./images/Default_A_still_life_of_a_mouthwatering_pizza_captured_in_oil_0.jpg" alt=""
+                    class="img_section3">
                 <div class="descricao_menu_op">
                     <h3 class="titulo_op">Pizza tal</h3>
                     <p>Classic tomate and cheese</p>
@@ -62,7 +108,8 @@
                 </div>
             </div>
             <div class="menu_op">
-                <img src="./pizza.png" alt="" class="img_section3">
+                <img src="./images/Default_A_still_life_of_a_mouthwatering_pizza_captured_in_oil_1.jpg" alt=""
+                    class="img_section3">
                 <div class="descricao_menu_op">
                     <h3 class="titulo_op">Pizza tal</h3>
                     <p>Classic tomate and cheese</p>
@@ -73,7 +120,8 @@
                 </div>
             </div>
             <div class="menu_op">
-                <img src="./pizza.png" alt="" class="img_section3">
+                <img src="./images/Default_A_still_life_of_a_mouthwatering_pizza_captured_in_oil_2.jpg" alt=""
+                    class="img_section3">
                 <div class="descricao_menu_op">
                     <h3 class="titulo_op">Pizza tal</h3>
                     <p>Classic tomate and cheese</p>
@@ -84,7 +132,8 @@
                 </div>
             </div>
             <div class="menu_op">
-                <img src="./pizza.png" alt="" class="img_section3">
+                <img src="./images/Default_A_still_life_of_a_mouthwatering_pizza_captured_in_oil_3.jpg" alt=""
+                    class="img_section3">
                 <div class="descricao_menu_op">
                     <h3 class="titulo_op">Pizza tal</h3>
                     <p>Classic tomate and cheese</p>
@@ -95,7 +144,8 @@
                 </div>
             </div>
             <div class="menu_op">
-                <img src="./pizza.png" alt="" class="img_section3">
+                <img src="./images/Default_A_still_life_of_a_mouthwatering_pizza_captured_in_oil_3.jpg" alt=""
+                    class="img_section3">
                 <div class="descricao_menu_op">
                     <h3 class="titulo_op">Pizza tal</h3>
                     <p>Classic tomate and cheese</p>
@@ -106,7 +156,8 @@
                 </div>
             </div>
             <div class="menu_op">
-                <img src="./pizza.png" alt="" class="img_section3">
+                <img src="./images/Default_A_still_life_of_a_mouthwatering_pizza_captured_in_oil_1.jpg" alt=""
+                    class="img_section3">
                 <div class="descricao_menu_op">
                     <h3 class="titulo_op">Pizza tal</h3>
                     <p>Classic tomate and cheese</p>
@@ -120,7 +171,8 @@
 
     <section class="section4" id="teste">
         <div class="section_4">
-            <img src="./placeholder.svg" alt="" class="image_section4">
+            <img src="./images/Default_A_vibrant_pizzeria_in_the_heart_of_France_nestled_betw_3.jpg" alt=""
+                class="image_section4">
         </div>
         <div class="descrição_4 ">
             <div class="descrição_titulo4">
@@ -161,8 +213,8 @@
     <footer class="rodape">
         <div class="rodape_conteudo">
             <div class="conteudo_rodape1">
-                <img src="./pizza.png" alt="">
-                <span>Pizzaria do Vitão</span>
+                <img src="./images/logo.png" alt="">
+                <span>Pizzaria La Toscana</span>
             </div>
             <ul class="menu_rodape">
                 <li><a href="#menu">Menu</a></li>
@@ -172,6 +224,17 @@
             <p>© 2024 Slice of Heaven. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.querySelector('[data-collapse-toggle="navbar-hamburger"]');
+            const menu = document.getElementById('navbar-hamburger');
+
+            button.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+        });
+    </script>
 </body>
 
 </html>
