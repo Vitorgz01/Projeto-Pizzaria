@@ -13,9 +13,9 @@
 
         <h1 class="title_header"><img src="./pizza.png" alt="" class="img_header">Pizzaria do Vitão</h1>
         <ul class="menu_header">
-            <li>Menu</li>
+            <li><a href="#menu">Menu</a></li>
             <li><a href="#teste">About</a></li>
-            <li>Contact</li>
+            <li><a href="#contato">Contact</a></li>
         </ul>
         <button class="header_button">Order Now</button>
 
@@ -42,7 +42,7 @@
 
     </section>
 
-    <section class="Section3">
+    <section class="Section3" id="menu">
         <div class="Section3_titulo">
             <h1 class="section1_h1">Our Delicious Pizza Menu</h1>
             <p class="p_section3">Chosse from a variety of mouthwatering pizza options.</p>
@@ -118,6 +118,60 @@
             </div>
     </section>
 
+    <section class="section4" id="teste">
+        <div class="section_4">
+            <img src="./placeholder.svg" alt="" class="image_section4">
+        </div>
+        <div class="descrição_4 ">
+            <div class="descrição_titulo4">
+                <h2>About Slice of Heaven</h2>
+                <p>Slice of Heaven is a family-owned pizzeria that has been serving the community for over 20 years. We
+                    take
+                    pride in using only the freshest ingredients and baking our pizzas to perfection.</p>
+                <p>Our mission is to provide our customers with the best pizza experience possible, from the moment they
+                    place their order to the last bite. We believe that pizza is more than just food - it's a way to
+                    bring
+                    people together and create lasting memories</p>
+                <p>Learn More</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contato">
+        <div class="contact_1">
+            <h1>Contact Us</h1>
+            <p>Have a question or want to place an order? Get in touch with us.</p>
+
+            <form action="/submit_form" method="post" class="formulario">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your menssage"></textarea>
+
+                <input type="submit" value="Enviar" class="button_form">
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape_conteudo">
+            <div class="conteudo_rodape1">
+                <img src="./pizza.png" alt="">
+                <span>Pizzaria do Vitão</span>
+            </div>
+            <ul class="menu_rodape">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#teste">About</a></li>
+                <li><a href="#contato">Contact</a></li>
+            </ul>
+            <p>© 2024 Slice of Heaven. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

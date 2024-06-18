@@ -4,19 +4,26 @@
 * {
     margin: 0;
     padding:0;
+    box-sizing: border-box;
 }
+ html{ 
+     scroll-behavior: smooth; 
+     
+ }
 body{
     font-family: "Yeseva One", serif;
     font-weight: 400;
     font-style: normal;
 }
+ /* body::-webkit-scrollbar{ 
+     display:none; 
+ }   */
 
 .cabecalho{
     background-color: bisque;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* justify-content: space-between; */
     justify-content: space-around;
     height: 4rem;
     font-family: "Yeseva One", serif;
@@ -37,12 +44,19 @@ body{
     max-height: 50px; 
 }
 
-.menu_header{
+.menu_header {
     display: flex;
     list-style:none;
     gap: 2em;    
     margin-left: 100px;
+    text-decoration: none;
+
 }
+.menu_header a{
+    text-decoration: none;
+    color: black;
+}
+
 
 .header_button{
     padding: 10px;
@@ -62,7 +76,6 @@ body{
     display:flex;
     flex-direction: column;
     gap: 10px;
-    /* width: 50%; */
    padding: 5rem 5rem 5rem 5rem;
    margin: 5em;
 }
@@ -104,11 +117,6 @@ body{
     margin-top: 50000px;
 }
 
-#teste{
-    scroll-behavior:smooth ;
-    overflow:scroll;
-}
-
 .Section3{
     display: flex;
     flex-direction: column;
@@ -124,6 +132,7 @@ body{
     gap: 40px;
     margin-top: 100px;
     width: 90rem;
+    margin-bottom: 100px;
 }
 .Section3_titulo{
     align-items: center;
@@ -135,18 +144,19 @@ body{
 
 
 .img_section3{
-    height: 100px;
+    height: 250px;
     /* border: gray solid; */
     display: inline-block;
     width: 100%;
-    margin-top: 10px;
-    border: solid 1px;
+   
+    object-fit: cover;
+    
 }
 
 .menu_op{
     border: 1px solid;
     background-color: rgba(248, 243, 235, 0.707);
-    padding: 20px 20px 0px 10px;
+    /* padding: 20px 20px 0px 10px; */
     border-radius: 10px;
 }
 .titulo_op{
@@ -154,8 +164,7 @@ body{
     margin-bottom: 10px;
 }
 .descricao_menu_op{
-margin-top: 20px;
-padding: 15px 15px 15px 0px;
+padding: 15px
 }
 
 .preço_menu{
@@ -165,7 +174,7 @@ padding: 15px 15px 15px 0px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-   color: rgb(255, 165, 0);
+   color:rgb(239 68 68);
 }
 
 #button_op{
@@ -173,4 +182,195 @@ padding: 15px 15px 15px 0px;
     border-radius: 10px;
     background-color: black;
     color: white;
+}
+
+
+.section4{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 50px 50px 100px;
+    margin: 0px 50px;
+    
+}
+
+.image_section4{
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+}
+.descrição_4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+}
+.descrição_titulo4 h2{
+    font-size:2rem;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.descrição_titulo4 p {
+    margin-top:1rem;
+    
+} 
+.descrição_titulo4 p:nth-of-type(3){
+    color: rgb(239 68 68);
+}
+
+.contact_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem;
+    background-color: #F3F4F6;
+    
+} 
+.contact_1 p {
+color: gray;
+padding-top: 10px;
+}
+.contact_1 h1{
+    font-size: 2rem;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    width: 32.375rem;
+    gap: 10px;
+}
+.formulario input{
+    padding: 8px;
+    border-radius: 5px;
+    font-family: "Yeseva One", serif;
+
+}
+.formulario textarea{
+    padding: 8px;
+    border-radius: 5px;
+    font-family: "Yeseva One", serif;
+
+}
+.op_form{
+    padding: 8px 12px;
+}
+.button_form{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.button_form:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.rodape_conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 32px 0px 32px;
+    background-color: black;
+    color: #F3F4F6;
+}
+.conteudo_rodape1{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    font-size: 1.5rem;
+}
+.menu_rodape{
+    display: flex;
+    list-style:none;
+    gap: 2em;    
+    margin-left: 100px;
+    text-decoration: none;
+}
+.rodape_conteudo img{
+    width: 50px;
+}
+
+.menu_rodape a{
+    text-decoration: none;
+    color: #F3F4F6;
+}
+
+@media (max-width: 425px) {
+    
+    .menu_header{
+        display: none;
+    }
+    .header_button{
+        display: none;
+    }
+
+    .Section1 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .Conteudo1_section1 {
+        padding: 20px;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section1_h1 {
+        font-size: 2rem;
+    }
+
+    .sec1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .conteudo2_section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .img_sec {
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Section3_titulo{
+        padding: 100px 15px 0px 15px;
+        
+    }
+    .Menu_Section3{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+   .section4{
+    display: grid;
+    grid-template-columns: 1fr;
+   justify-content: center;
+   align-items: center;
+   width:64%;
+   
+   }
+   .section_4 img{
+    width:350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+   }
 }
